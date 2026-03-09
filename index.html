@@ -1,0 +1,210 @@
+<!--
+Villa Panorama del Mar - Luxury Filming & Photoshoot Villa in Málaga
+Responsive one-page landing page
+English & Spanish
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Villa Panorama Malaga | Luxury Filming & Photoshoot Villa Málaga</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Elegant font families -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Sticky Header -->
+  <header class="header">
+    <div class="container header__container">
+      <a href="#hero" class="logo" id="logo">Villa Panorama Malaga</a>
+      <div class="header-right">
+        <div class="lang-switcher">
+          <button id="lang-en" class="lang-btn" aria-label="English">EN</button>
+          <button id="lang-es" class="lang-btn" aria-label="Español">ES</button>
+        </div>
+        <a href="#contact" class="btn btn-primary btn-header" id="header-cta"><span data-lang="en">Inquire</span><span data-lang="es">Consultar</span></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <!-- Background feature image slider -->
+    <div class="hero-bg-slider" id="hero-bg-slider">
+      <div class="bg-slider-track">
+        <img src="assets/img/feature-seaview.jpg" alt="Sea Views" class="bg-slider-img">
+        <img src="assets/img/feature-pool.jpg" alt="Infinity Pool" class="bg-slider-img">
+        <img src="assets/img/feature-garden.jpg" alt="Garden" class="bg-slider-img">
+        <img src="assets/img/feature-terrace.jpg" alt="Terraces" class="bg-slider-img">
+        <img src="assets/img/feature-modern.jpg" alt="Modern Design" class="bg-slider-img">
+        <img src="assets/img/feature-light.jpg" alt="Natural Light" class="bg-slider-img">
+      </div>
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="container hero__content">
+      <h1 id="hero-headline">Villa Panorama Malaga</h1>
+      <h2 id="hero-subheadline"><span data-lang="en">Luxury Filming & Photoshoot Villa in Málaga</span><span data-lang="es">Villa de lujo para rodajes y sesiones fotográficas en Málaga</span></h2>
+      <div class="hero__cta">
+        <a href="#contact" class="btn btn-primary" id="cta-primary"><span data-lang="en">Inquire for Film & Photo Production</span><span data-lang="es">Consulta para rodajes y fotografía</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <h3><span data-lang="en">About the Villa</span><span data-lang="es">Sobre la villa</span></h3>
+      <p><span data-lang="en">A contemporary luxury villa in Cerrado de Calderón, Málaga, located on a hilltop with breathtaking 180-degree panoramic views of the Mediterranean Sea. Ideal for film productions, commercials, fashion shoots, interviews, music videos, and lifestyle photography.</span><span data-lang="es">Villa contemporánea de lujo en Cerrado de Calderón, Málaga, situada en una colina con impresionantes vistas panorámicas de 180° al mar Mediterráneo. Ideal para rodajes, anuncios, sesiones de moda, entrevistas, videoclips y fotografía lifestyle.</span></p>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <h3><span data-lang="en">Key Features</span><span data-lang="es">Características principales</span></h3>
+      <div class="features__grid">
+        <!-- Feature cards with icons -->
+        <div class="feature-card">
+          <img src="assets/img/feature-seaview.jpg" alt="Sea Views">
+          <h4><span data-lang="en">180° Sea Views</span><span data-lang="es">Vistas al mar 180°</span></h4>
+        </div>
+        <div class="feature-card">
+          <img src="assets/img/feature-pool.jpg" alt="Infinity Pool">
+          <h4><span data-lang="en">Infinity Pool</span><span data-lang="es">Piscina infinita</span></h4>
+        </div>
+        <div class="feature-card">
+          <img src="assets/img/feature-garden.jpg" alt="Garden">
+          <h4><span data-lang="en">1500 m² Garden</span><span data-lang="es">Jardín 1500 m²</span></h4>
+        </div>
+        <div class="feature-card">
+          <img src="assets/img/feature-terrace.jpg" alt="Terraces">
+          <h4><span data-lang="en">Multiple Terraces</span><span data-lang="es">Varias terrazas</span></h4>
+        </div>
+        <div class="feature-card">
+          <img src="assets/img/feature-modern.jpg" alt="Modern Design">
+          <h4><span data-lang="en">Modern Design</span><span data-lang="es">Diseño moderno</span></h4>
+        </div>
+        <div class="feature-card">
+          <img src="assets/img/feature-light.jpg" alt="Natural Light">
+          <h4><span data-lang="en">Excellent Natural Light</span><span data-lang="es">Luz natural excelente</span></h4>
+        </div>
+        <!-- Add more feature cards as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <h3><span data-lang="en">Gallery</span><span data-lang="es">Galería</span></h3>
+      <!-- Full-width gallery slider -->
+      <div class="hero-slider" id="gallery-slider">
+        <div class="slider-track">
+          <img src="assets/img/gallery1.jpg" alt="Villa Photo 1" class="slider-img">
+          <img src="assets/img/gallery2.jpg" alt="Villa Photo 2" class="slider-img">
+          <img src="assets/img/gallery3.jpg" alt="Villa Photo 3" class="slider-img">
+          <img src="assets/img/gallery4.jpg" alt="Villa Photo 4" class="slider-img">
+          <img src="assets/img/gallery5.jpg" alt="Villa Photo 5" class="slider-img">
+          <img src="assets/img/gallery6.jpg" alt="Villa Photo 6" class="slider-img">
+          <img src="assets/img/gallery7.jpg" alt="Villa Photo 7" class="slider-img">
+          <img src="assets/img/gallery8.jpg" alt="Villa Photo 8" class="slider-img">
+          <img src="assets/img/gallery9.jpg" alt="Villa Photo 9" class="slider-img">
+          <img src="assets/img/gallery10.jpg" alt="Villa Photo 10" class="slider-img">
+          <img src="assets/img/gallery11.jpg" alt="Villa Photo 11" class="slider-img">
+          <img src="assets/img/gallery12.jpg" alt="Villa Photo 12" class="slider-img">
+          <img src="assets/img/gallery13.jpg" alt="Villa Photo 13" class="slider-img">
+          <img src="assets/img/gallery14.jpg" alt="Villa Photo 14" class="slider-img">
+          <img src="assets/img/gallery15.jpg" alt="Villa Photo 15" class="slider-img">
+          <img src="assets/img/gallery16.jpg" alt="Villa Photo 16" class="slider-img">
+          <img src="assets/img/gallery17.jpg" alt="Villa Photo 17" class="slider-img">
+          <img src="assets/img/gallery18.jpg" alt="Villa Photo 18" class="slider-img">
+          <img src="assets/img/gallery19.jpg" alt="Villa Photo 19" class="slider-img">
+          <img src="assets/img/gallery20.jpg" alt="Villa Photo 20" class="slider-img">
+        </div>
+        <button class="slider-btn slider-btn-prev" aria-label="Previous photo">&#10094;</button>
+        <button class="slider-btn slider-btn-next" aria-label="Next photo">&#10095;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Logistics Section -->
+  <section class="logistics" id="logistics">
+    <div class="container">
+      <button class="accordion-header" data-accordion="logistics">
+        <span><span data-lang="en">Production-Friendly Logistics</span><span data-lang="es">Logística para producciones</span></span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content" id="logistics-content">
+        <ul>
+          <li><span data-lang="en">Easy street parking next to the property</span><span data-lang="es">Aparcamiento fácil junto a la propiedad</span></li>
+          <li><span data-lang="en">Good access for production vans and equipment unloading</span><span data-lang="es">Buen acceso para furgonetas y descarga de equipos</span></li>
+          <li><span data-lang="en">Capacity for productions up to 50 people</span><span data-lang="es">Capacidad para producciones de hasta 50 personas</span></li>
+          <li><span data-lang="en">Located at the end of a dead-end street / cul-de-sac</span><span data-lang="es">Ubicada al final de una calle sin salida</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- House Rules Section -->
+  <section class="rules" id="rules">
+    <div class="container">
+      <button class="accordion-header" data-accordion="rules">
+        <span><span data-lang="en">House Rules</span><span data-lang="es">Normas de la casa</span></span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content" id="rules-content">
+        <ul>
+          <li><span data-lang="en">This is a private family home where we live</span><span data-lang="es">Esta es una casa familiar privada donde vivimos</span></li>
+          <li><span data-lang="en">Productions must treat the space with care and respect</span><span data-lang="es">Las producciones deben tratar el espacio con cuidado y respeto</span></li>
+          <li><span data-lang="en">No noise in the evening</span><span data-lang="es">No se permite ruido por la noche</span></li>
+          <li><span data-lang="en">The property must be left in the same condition as found</span><span data-lang="es">La propiedad debe quedar en el mismo estado en que se encontró</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location Section -->
+  <section class="location" id="location">
+    <div class="container">
+      <button class="accordion-header" data-accordion="location">
+        <span><span data-lang="en">Location</span><span data-lang="es">Ubicación</span></span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content" id="location-content">
+        <p><span data-lang="en">Cerrado de Calderón, Málaga. Quiet residential area with panoramic sea views.</span><span data-lang="es">Cerrado de Calderón, Málaga. Zona residencial tranquila con vistas panorámicas al mar.</span></p>
+        <ul class="location__distances">
+          <li><span data-lang="en">Málaga city center: 10 km</span><span data-lang="es">Centro de Málaga: 10 km</span></li>
+          <li><span data-lang="en">Málaga airport: 30 km</span><span data-lang="es">Aeropuerto de Málaga: 30 km</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h3><span data-lang="en">Contact</span><span data-lang="es">Contacto</span></h3>
+      <!-- Brevo Contact Forms -->
+      <div class="brevo-form-wrapper" data-lang="en">
+        <iframe width="540" height="800" src="https://e40ad487.sibforms.com/serve/MUIFAOsHNoydUNofKsf0BmT4pnTdOmq8yMq72FA2ODOyEBoBSLqqEFGO2wwW5SvA4N9OTwzxnktEQSPX4SnL3DHGz15sT4L5j8KRcHYm00LwrQ7phAHK93YS0CsOtN3Ww08HqwvaE_BYLWxpISs6kaIrSydeC2IbU0RA0VaByMxEXeLjURRG5BXaBB-Wf_hr1Ar0ALvinzTpYfsGZA==" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>
+      </div>
+      <div class="brevo-form-wrapper" data-lang="es">
+        <iframe width="540" height="800" src="https://e40ad487.sibforms.com/serve/MUIFAN0uhkdUdYhEMY6nU1qUwRencXuIykmwtlpou3TgSuYg_sIwZPao-nA7o4RKGf8JHhzGCN-5B1SsKqUuYEGrNL0MsFnxpyL2ChO83yiR1-Jh8pbc8XVN9A4VQwLi3OJ6K0jh0s3fni6T_oedRLJ3nN53WNwTLxFxYhT1bwPSUgMuTIBe0L7m4BmEqsvpYkzabvgoaPOAtvaJ_Q==" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Villa Panorama Malaga. <span data-lang="en">All rights reserved.</span><span data-lang="es">Todos los derechos reservados.</span></p>
+    </div>
+  </footer>
+
+  <script src="translation.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
