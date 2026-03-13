@@ -135,6 +135,81 @@ document.addEventListener('DOMContentLoaded', function () {
       content.classList.toggle('show');
     });
   });
+
+  // Image Zoom Modal
+  const modal = document.getElementById('imageModal');
+  const modalImg = document.getElementById('modalImage');
+  const galleryImages = Array.from(document.querySelectorAll('.slider-img'));
+  const featureImages = Array.from(document.querySelectorAll('.feature-card img'));
+  const closeModal = document.getElementsByClassName('close-btn')[0];
+  const prevBtn = document.querySelector('.modal .prev');
+  const nextBtn = document.querySelector('.modal .next');
+
+  let currentImageIndex;
+
+  function openModal(imageSrc, showNav = false) {
+    modal.style.display = 'block';
+    modalImg.src = imageSrc;
+    if (showNav) {
+      prevBtn.style.display = 'block';
+      nextBtn.style.display = 'block';
+    } else {
+      prevBtn.style.display = 'none';
+      nextBtn.style.display = 'none';
+    }
+  }
+
+  function closeModalHandler() {
+    modal.style.display = 'none';
+  }
+
+  function showNextImage() {
+    currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+    modalImg.src = galleryImages[currentImageIndex].src;
+  }
+
+  function showPrevImage() {
+    currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+    modalImg.src = galleryImages[currentImageIndex].src;
+  }
+
+  featureImages.forEach((img) => {
+    img.addEventListener('click', function() {
+      openModal(this.src, false);
+    });
+  });
+
+  galleryImages.forEach((img, index) => {
+    img.addEventListener('click', function() {
+      currentImageIndex = index;
+      openModal(this.src, true);
+    });
+  });
+
+  closeModal.onclick = closeModalHandler;
+  prevBtn.onclick = showPrevImage;
+  nextBtn.onclick = showNextImage;
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      closeModalHandler();
+    }
+  }
+
+  window.addEventListener('keydown', function(event) {
+    if (modal.style.display === 'block' && prevBtn.style.display === 'block') {
+      if (event.key === 'ArrowRight') {
+        showNextImage();
+      } else if (event.key === 'ArrowLeft') {
+        showPrevImage();
+      } else if (event.key === 'Escape') {
+        closeModalHandler();
+      }
+    }
+    else if (modal.style.display === 'block' && event.key === 'Escape') {
+      closeModalHandler();
+    }
+  });
 });
 
 // Brevo form handles submission automatically
